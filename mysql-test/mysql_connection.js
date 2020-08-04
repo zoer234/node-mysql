@@ -13,4 +13,6 @@ const connection = mysql.createConnection(
 module.exports = connection
 
 
+// 1-1 문제 
+query = 'select first_name , title , grade from papers as p join students as s on s.id = p.student_id order by grade desc'
 
